@@ -15,6 +15,7 @@
   &__el
     position: relative
     padding-right: 28px
+
     &:after,
     &:before
       position: absolute
@@ -22,15 +23,15 @@
       right: 13px
       width: 1px
       height: 6px
-      background-color: #373737
+      background-color: #bdbdbd
 
     &:after
       top: 6px
-      transform: rotate(-40deg)
+      transform: rotate(-45deg)
 
     &:before
       bottom: 3px
-      transform: rotate(40deg)
+      transform: rotate(45deg)
 
     &:last-child
       padding-left: 0
@@ -41,10 +42,10 @@
 
     &:last-child
       a
-        color: #373737
+        color: #545454
         pointer-events: none
 
   &__link
     font-size: 13px
-    color: #1d7fd5
+    color: $bgBlue
     text-transform: capitalize
