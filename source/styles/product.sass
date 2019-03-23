@@ -2,11 +2,14 @@
   margin-bottom: 32px
   display: flex
   flex-direction: row
+  +m(768)
+    flex-direction: column
 
   &__left
     margin-right: 30px
     +m(768)
-      margin-right: 15px
+      text-align: center
+      margin-right: 0
 
   &__title
 
@@ -46,7 +49,7 @@
     letter-spacing: .4px
 
   &__img
-    max-width: 164px
+    width: 164px
 
   &__text
     margin-top: 5px
@@ -55,16 +58,9 @@
     margin-top: 22px
 
     +m(768)
-      margin-top: 9px
+      margin-top: 5px
 
     &__el
       margin-bottom: 1px
       &:last-child
         margin-bottom: 0
-
-    &__link
-
-      +m(768)
-        padding: 0 10px
-        height: 26px
-        line-height: 26px
