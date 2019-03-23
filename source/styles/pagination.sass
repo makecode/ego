@@ -1,0 +1,33 @@
+.pagination
+  text-align: center
+  padding-top: 10px
+
+  &__list
+    display: inline-flex
+
+  &__el
+    margin: 0 2px
+
+    &.is-active,
+    &:hover
+      a
+        color: #fff
+        background-color: $bgBlue
+        border-color: $bgBlue
+      span
+        &:after,
+        &:before
+          background-color: #fff
+
+  &__link
+    position: relative
+    display: flex
+    align-items: center
+    padding: 0 11px
+    margin: 0
+    height: 30px
+    line-height: 30px
+    color: #333
+    border: 1px solid #dcdcdc
+    cursor: pointer
+    box-sizing: border-box

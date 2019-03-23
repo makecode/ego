@@ -1,0 +1,64 @@
+.social
+  width: 71%
+
+  +m(768)
+    width: 100%
+  &__list
+    display: flex
+    justify-content: space-between
+
+    +m(768)
+      flex-direction: column
+
+  &__el
+    position: relative
+    text-align: center
+    width: 142px
+    height: 44px
+    line-height: 44px
+    transition: $transition
+
+    +m(768)
+      margin-bottom: 10px
+      &:last-child
+        margin-bottom: 0
+
+    &:hover
+      .social__link
+        color: white
+
+    &:last-child
+      margin-right: 0
+
+    &.is-blue
+      background-color: #5c72c5
+
+      &:hover
+        background-color: #6880d9
+
+    &.is-light-blue
+      background-color: #35a6ea
+
+      &:hover
+        background-color: #60c0f7
+
+    &.is-red
+      background-color: #f86153
+
+      &:hover
+        background-color: #ff6e61
+
+    .icon
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      left: 15px
+
+  &__link
+    display: block
+    color: #fff
+    font-size: 14px
+
+  span
+    color: #fff
+    margin-left: 25px

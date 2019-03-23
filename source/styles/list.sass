@@ -1,0 +1,31 @@
+.list
+  display: flex
+  flex-direction: row
+  margin-top: 10px
+
+  &__el
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+
+  &__link
+    display: block
+
+  &.is-circle
+    flex-direction: column
+
+    .list
+
+      &__el
+        position: relative
+        padding-left: 12px
+
+        &:after
+          position: absolute
+          top: 8px
+          left: 1px
+          content: ''
+          width: 3px
+          height: 3px
+          border-radius: 50%
+          background-color: #000

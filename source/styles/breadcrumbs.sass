@@ -1,0 +1,50 @@
+.top-menu
+  padding: 10px 0
+  border-bottom: 1px solid #ececec
+
+.breadcrumbs
+  width: 100%
+  display: flex
+  align-items: center
+  box-sizing: border-box
+
+  &__list
+    display: flex
+    flex-wrap: wrap
+
+  &__el
+    position: relative
+    padding-right: 28px
+    &:after,
+    &:before
+      position: absolute
+      content: ''
+      right: 13px
+      width: 1px
+      height: 6px
+      background-color: #373737
+
+    &:after
+      top: 4px
+      transform: rotate(-45deg)
+
+    &:before
+      bottom: 5px
+      transform: rotate(45deg)
+
+    &:last-child
+      padding-left: 0
+
+      &:after,
+      &:before
+        display: none
+
+    &:last-child
+      a
+        color: #373737
+        pointer-events: none
+
+  &__link
+    font-size: 13px
+    color: #1d7fd5
+    text-transform: capitalize

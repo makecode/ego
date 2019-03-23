@@ -1,0 +1,34 @@
+.hero
+  padding-top: 65px
+  min-height: 370px
+  background: url('../media/main-bg.png') bottom center no-repeat
+
+  +m(768)
+    padding-top: 40px
+
+  &__banner
+    width: 100%
+    text-align: center
+    color: #fff
+
+  &__title
+    margin-bottom: 64px
+    letter-spacing: -0.9px
+    text-transform: uppercase
+
+    +m(1024)
+      font-size: 47px
+
+    +m(768)
+      font-size: 37px
+
+    span
+      display: block
+      margin-top: 8px
+      font-size: 18px
+      letter-spacing: 0.1px
+      font-family: $f-opensans-regular
+      text-transform: none
+
+      +m(768)
+        font-size: 20px

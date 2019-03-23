@@ -1,0 +1,70 @@
+.product
+  margin-bottom: 32px
+  display: flex
+  flex-direction: row
+
+  &__left
+    margin-right: 30px
+    +m(768)
+      margin-right: 15px
+
+  &__title
+
+    h1
+      font-size: 36px
+      letter-spacing: -0.7px
+      font-family: $f-opensans-semibold
+
+      +m(1024)
+        font-size: 26px
+
+      +m(768)
+        font-size: 22px
+
+    .subtitle
+      font-size: 28px
+
+  &__author
+    margin-top: 5px
+    margin-bottom: 10px
+
+    +m(768)
+      margin: 0
+
+  &__author
+    font-size: 14px
+
+    a
+      color: $bgBlue
+
+      span
+        color: $text
+
+  &__rating
+    font-size: 14px
+    padding-top: 6px
+    letter-spacing: .4px
+
+  &__img
+    max-width: 164px
+
+  &__text
+    margin-top: 5px
+
+  .tags
+    margin-top: 22px
+
+    +m(768)
+      margin-top: 9px
+
+    &__el
+      margin-bottom: 1px
+      &:last-child
+        margin-bottom: 0
+
+    &__link
+
+      +m(768)
+        padding: 0 10px
+        height: 26px
+        line-height: 26px

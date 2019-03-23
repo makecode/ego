@@ -1,0 +1,30 @@
+.search
+  width: 100%
+  position: relative
+  display: flex
+  cursor: text
+  +m(768)
+    flex-wrap: wrap
+
+  &__field
+    width: 100%
+
+  &__action
+    position: relative
+    text-align: center
+    cursor: pointer
+    +m(768)
+      margin-top: 10px
+      width: 100%
+
+    .search__icon
+      position: absolute
+      top: 50%
+      left: 25px
+      transform: translateY(-50%)
+
+  &.is-mobile
+    flex-wrap: wrap
+
+    .search__action
+      width: 100%

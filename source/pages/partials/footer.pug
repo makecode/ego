@@ -1,0 +1,26 @@
+-
+  const navList = [
+    'Home', 'Games', 'Contact Us', 'Terms', 'Privacy Policy'
+  ]
+
+  const nav = [
+    { link: '#', title: 'Home' },
+    { link: '#', title: 'Games' },
+    { link: '#', title: 'Contact us' },
+    { link: '#', title: 'Terms' },
+    { link: '#', title: 'Privacy Policy' }
+  ]
+
+footer.footer
+  div.container
+    div.footer__wrap
+      div.footer__left
+        p.copyright © 2018 EmulatorGamesOnline.com. All rights reserved.
+      // end footer__left
+      div.footer__right
+        ul.nav-footer
+          each el in nav
+            li.nav-footer__el
+              a.nav-footer__link(href=el.link)= el.title
+
+// end footer

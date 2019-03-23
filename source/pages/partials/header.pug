@@ -1,0 +1,182 @@
+-
+  const nav = [
+    { link: '#', title: 'Consoles' },
+    { link: '#', title: 'Genres' },
+    { link: '#', title: 'Game Series' }
+  ]
+
+header.header
+  div.header__wrap.container
+    div.header__left
+      div.hamburger#hamburger
+        span.hamburger__el
+        span.hamburger__el
+        span.hamburger__el
+      div.logo
+        a.logo__link(href='main.html', title='ego')
+          img(src=require('./../../media/logo.svg'))
+    div.header__center
+      ul.nav
+        li.nav__el
+          a.nav__link(href="#") Consoles
+          div.dropdown
+            ul.dropdown__list
+              li.dropdown__el
+                a(href="#").dropdown__link 2600
+              li.dropdown__el
+                a(href="#").dropdown__link CPS1
+              li.dropdown__el
+                a(href="#").dropdown__link CPS2
+              li.dropdown__el
+                a(href="#").dropdown__link CPS3
+              li.dropdown__el
+                a(href="#").dropdown__link GB
+              li.dropdown__el
+                a(href="#").dropdown__link CBA
+              li.dropdown__el
+                a(href="#").dropdown__link Jaguar
+              li.dropdown__el
+                a(href="#").dropdown__link Lynx
+              li.dropdown__el
+                a(href="#").dropdown__link Mame
+              li.dropdown__el
+                a(href="#").dropdown__link Msx
+              li.dropdown__el
+                a(href="#").dropdown__link N64
+            ul.dropdown__list
+              li.dropdown__el
+                a(href="#").dropdown__link Nds
+              li.dropdown__el
+                a(href="#").dropdown__link Nes
+              li.dropdown__el
+                a(href="#").dropdown__link Ngp
+              li.dropdown__el
+                a(href="#").dropdown__link Ps1
+              li.dropdown__el
+                a(href="#").dropdown__link Sega
+              li.dropdown__el
+                a(href="#").dropdown__link Sgg
+              li.dropdown__el
+                a(href="#").dropdown__link Sms
+              li.dropdown__el
+                a(href="#").dropdown__link Snes
+              li.dropdown__el
+                a(href="#").dropdown__link Tg16
+              li.dropdown__el
+                a(href="#").dropdown__link Vb
+              li.dropdown__el
+                a(href="#").dropdown__link Wswan
+              li.dropdown__el
+                a(href="#").dropdown__btn-link View All
+        li.nav__el
+          a.nav__link(href="#") Genres
+          div.dropdown
+            ul.dropdown__list
+              li.dropdown__el
+                a(href="#").dropdown__link Battleroad
+              li.dropdown__el
+                a(href="#").dropdown__link Barbie
+              li.dropdown__el
+                a(href="#").dropdown__link DBZ
+              li.dropdown__el
+                a(href="#").dropdown__link Donkey Kong
+              li.dropdown__el
+                a(href="#").dropdown__link Final Fantasy
+              li.dropdown__el
+                a(href="#").dropdown__link Fire Emblem
+              li.dropdown__el
+                a(href="#").dropdown__link Gundam
+              li.dropdown__el
+                a(href="#").dropdown__link Harry Potter
+              li.dropdown__el
+                a(href="#").dropdown__link Madden
+              li.dropdown__el
+                a(href="#").dropdown__link Mario
+              li.dropdown__el
+                a(href="#").dropdown__link Mega Man
+              li.dropdown__el
+                a(href="#").dropdown__link Mortal Kombat
+            ul.dropdown__list
+              li.dropdown__el
+                a(href="#").dropdown__link Battleroad
+              li.dropdown__el
+                a(href="#").dropdown__link Barbie
+              li.dropdown__el
+                a(href="#").dropdown__link DBZ
+              li.dropdown__el
+                a(href="#").dropdown__link Donkey Kong
+              li.dropdown__el
+                a(href="#").dropdown__link Final Fantasy
+              li.dropdown__el
+                a(href="#").dropdown__link Fire Emblem
+              li.dropdown__el
+                a(href="#").dropdown__link Gundam
+              li.dropdown__el
+                a(href="#").dropdown__link Harry Potter
+              li.dropdown__el
+                a(href="#").dropdown__link Madden
+              li.dropdown__el
+                a(href="#").dropdown__link Mario
+              li.dropdown__el
+                a(href="#").dropdown__link Mega Man
+              li.dropdown__el
+                a(href="#").dropdown__link Mortal Kombat
+              li.dropdown__el
+                a(href="#").dropdown__btn-link View All
+        li.nav__el
+          a.nav__link(href="#") Game Series
+          div.dropdown
+            ul.dropdown__list
+              li.dropdown__el
+                a(href="#").dropdown__link Aero the Acro-Bat
+              li.dropdown__el
+                a(href="#").dropdown__link Alex Kidd
+              li.dropdown__el
+                a(href="#").dropdown__link Alien
+              li.dropdown__el
+                a(href="#").dropdown__link Animaniacs
+              li.dropdown__el
+                a(href="#").dropdown__link Another World
+              li.dropdown__el
+                a(href="#").dropdown__link Arkanoid
+              li.dropdown__el
+                a(href="#").dropdown__link Art of Fighting
+              li.dropdown__el
+                a(href="#").dropdown__link Asterix and Obelix
+              li.dropdown__el
+                a(href="#").dropdown__link Asteroids
+              li.dropdown__el
+                a(href="#").dropdown__link Barbie
+            ul.dropdown__list
+              li.dropdown__el
+                a(href="#").dropdown__link Battleroads
+              li.dropdown__el
+                a(href="#").dropdown__link Bomberman
+              li.dropdown__el
+                a(href="#").dropdown__link Bonk
+              li.dropdown__el
+                a(href="#").dropdown__link Boogerman
+              li.dropdown__el
+                a(href="#").dropdown__link Breakout
+              li.dropdown__el
+                a(href="#").dropdown__link Battleroads
+              li.dropdown__el
+                a(href="#").dropdown__link Bomberman
+              li.dropdown__el
+                a(href="#").dropdown__link Bonk
+              li.dropdown__el
+                a(href="#").dropdown__link Boogerman
+              li.dropdown__el
+                a(href="#").dropdown__link Breakout
+              li.dropdown__el
+                a(href="#").dropdown__btn-link View All
+
+    div.header__right
+      div.search
+        div.search__field
+          input.input(type='text', placeholder='Search for games')
+        div.search__action
+          button.btn.is-search-small
+            span.icon.is-search
+
+// end header

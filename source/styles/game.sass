@@ -1,0 +1,63 @@
+.game
+  padding: 9px 9px 0 9px
+  width: 184px
+  display: flex
+  flex-direction: column
+  border: 1px solid #ebebeb
+  box-sizing: border-box
+
+  +m(1024)
+    width: 100%
+
+  &__link
+    margin-bottom: 5px
+
+  &__img
+    position: relative
+    transition: $transition
+    &::after
+      position: absolute
+      content: ''
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(black, 0.4)
+      opacity: 0
+      z-index: 1
+
+    img
+      display: block
+
+      +m(1024)
+        width: 100%
+
+    .play
+      display: none
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      z-index: 3
+
+    &:hover
+      &::after
+        opacity: 1
+
+      .play
+        display: block
+
+  &__name
+    color: $text
+    padding: 10px 0 0 0
+    height: calc(25px * 2)
+    overflow: hidden
+    display: -webkit-box
+    -webkit-line-clamp: 2
+    -webkit-box-orient: vertical
+    transition: $transition
+    &:hover
+      color: $bgBlue
+
+  &__categories
+    padding-bottom: 5px

@@ -1,0 +1,52 @@
+.consoles
+  margin-bottom: 20px
+
+  &__title
+    margin-bottom: 15px
+    letter-spacing: -0.6px
+    display: flex
+    flex-direction: row
+    align-items: center
+    text-transform: uppercase
+
+    +m(768)
+      flex-direction: column
+      flex-wrap: wrap
+      align-items: flex-start
+
+  &__all
+    margin-left: 25px
+    width: 146px
+    height: 28px
+    line-height: 28px
+    letter-spacing: 0.1px
+    color: #fff
+    background-color: $bgBlue
+    text-align: center
+    text-transform: uppercase
+    transition: $transition
+
+    &:hover
+      color: #fff
+      background-color: #3762ed
+
+    +m(768)
+      margin-left: 0
+      margin-top: 15px
+      width: 100%
+
+  &__wrap
+    margin-top: 25px
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+
+    +m(1199)
+      justify-content: flex-start
+
+  &__link
+    width: 160px
+    height: 160px
+    display: inline-block
+    border: 1px solid #ccc
+    box-sizing: border-box

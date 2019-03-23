@@ -1,0 +1,70 @@
+.icon
+  position: relative
+  display: inline-block
+  vertical-align: middle
+
+  &.is-search
+    width: 18px
+    height: 18px
+    background-image: url('../media/icon_search.png')
+    background-size: cover
+
+  &.is-fb
+    width: 11px
+    height: 20px
+    background-image: url('../media/ico_fb.png')
+    background-size: cover
+
+  &.is-tw
+    width: 27px
+    height: 18px
+    background-image: url('../media/ico_gp.png')
+    background-size: cover
+
+  &.is-gp
+    width: 18px
+    height: 16px
+    background-image: url('../media/ico_tw.png')
+    background-size: cover
+
+  &.is-arrow-left
+    width: 12px
+    height: 8px
+    &:after,
+    &:before
+      position: absolute
+      content: ''
+      width: 1px
+      height: 5px
+      background-color: $text
+
+    &:after
+      left: 0
+      top: 0
+      transform: rotate(45deg)
+
+    &:before
+      left: 0
+      bottom: 0
+      transform: rotate(-45deg)
+
+  &.is-arrow-right
+    width: 12px
+    height: 8px
+    &:after,
+    &:before
+      position: absolute
+      content: ''
+      width: 1px
+      height: 5px
+      background-color: $text
+
+    &:after
+      right: 0
+      top: 0
+      transform: rotate(-45deg)
+
+    &:before
+      right: 0
+      bottom: 0
+      transform: rotate(45deg)

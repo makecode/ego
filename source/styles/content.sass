@@ -1,0 +1,98 @@
+.content
+  padding-top: 30px
+  padding-bottom: 60px
+
+  +m(768)
+    padding-top: 20px
+    padding-bottom: 40px
+
+  &__wrap
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    width: 100%
+
+  &__left
+    margin-right: 35px
+
+    +m(1024)
+      width: 100%
+      margin-right: 0
+
+  &__right
+    width: 300px
+
+    +m(1024)
+      display: none
+  // MAIN
+  &.is-main
+    padding-top: 28px
+    .games__el
+      &:nth-child(5n)
+        margin-right: 0
+
+      +m(1024)
+        margin-right: 2%
+        margin-bottom: 2%
+        width: 32%
+
+        &:nth-child(3n)
+          margin-right: 0
+
+        &:nth-child(5n)
+          margin-right: auto
+
+      +m(768)
+        width: 49%
+        margin-right: 2%!important
+
+        &:nth-child(2n)
+          margin-right: 0!important
+
+        &:nth-child(3n)
+          margin-right: initial
+
+  &.is-1-inner
+    padding-top: 30px
+
+  // INNER 2
+  &.is-2-inner
+    .content__right
+      width: 175px
+
+  // INNER 3
+  &.is-3-inner
+    .content__left
+      margin-right: 25px
+
+    .games__el
+      margin-right: 11px
+
+      &:nth-child(4n)
+        margin-right: 0
+
+      +m(1024)
+        margin-right: 2%
+        margin-bottom: 2%
+        width: 32%
+
+        &:nth-child(3n)
+          margin-right: 0
+
+        &:nth-child(4n)
+          margin-right: auto
+
+        +m(768)
+          width: 49%
+          margin-right: 2%!important
+
+          &:nth-child(2n)
+            margin-right: 0!important
+
+          &:nth-child(4n)
+            margin-right: initial
+
+
+  // INNER 5
+  &.is-5-inner
+    padding-top: 23px

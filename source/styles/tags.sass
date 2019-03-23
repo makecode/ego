@@ -1,0 +1,31 @@
+.tags
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+
+  &__el
+    margin-right: 1px
+    &:last-child
+      margin-right: 0
+
+  &__link
+    display: inline-block
+    padding: 0 17px
+    height: 36px
+    line-height: 36px
+    color: white
+    background-color: #e0e0e0
+    transition: $transition
+    &:hover
+      background-color: #456ef4
+      color: white
+
+  &.is-small
+    .tags__el
+      margin-right: 4px
+      margin-bottom: 4px
+    .tags__link
+      padding: 0 6px
+      height: 18px
+      line-height: 18px
+      font-size: 12px

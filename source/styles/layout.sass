@@ -1,0 +1,85 @@
+.container
+  position: relative
+  margin: 0 auto
+  width: 970px
+  //overflow: hidden
+
+  +m(1200)
+    width: 980px
+
+  +m(1024)
+    width: 760px
+    padding: 0 20px
+
+  +m(768)
+    width: 100%
+
+.header
+  position: relative
+  height: 80px
+  background-color: $headerBgBlue
+  background-size: cover
+  z-index: 15
+  flex-shrink: 0
+
+  &__wrap
+    height: 80px
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center
+    z-index: 11
+
+  .logo
+    line-height: 0
+    width: 190px
+
+    &__link
+      display: block
+
+  .nav
+    +m(768)
+      display: none
+
+  .search
+    width: 246px
+    input
+      font-size: 14px
+    +m(1024)
+      display: none
+
+  &__left
+    display: flex
+    align-items: center
+    transition: $transition
+    &.is-menu-open
+      transform: translateX(260px)
+
+    .hamburger
+      margin-right: 20px
+
+  &__right
+    margin-left: 10px
+
+.main
+  flex: 1 0 auto
+
+.footer
+  flex-shrink: 0
+  padding: 40px 0
+  background-color: #eceff1
+
+  +m(480)
+    padding: 20px 0
+
+  &__wrap
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+
+    +m(1024)
+      flex-direction: column
+
+.banner
+  margin-bottom: 30px

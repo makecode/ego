@@ -1,0 +1,163 @@
+extends ../base
+block title
+  |EGO
+block main
+  include ../partials/mobile-menu.pug
+  main.main
+    div.top-menu
+      div.container
+        div.breadcrumbs
+          ul.breadcrumbs__list
+            each el in breadcrumbs
+              li.breadcrumbs__el
+                a.breadcrumbs__link(href=el.link)= el.title
+        // end breadcrumbs
+    section.content.is-1-inner
+      div.container
+        div.content__top
+          div.product
+            div.product__left
+              img.product__img(src=require('./../../media/product.png'))
+            div.product__right
+              div.product__title
+                h1 The Legend of Zelda: Majora's Mask
+              p.product__author
+                a(href='#') Nintendo 64 Game
+                  span  (N64)
+              div.raiting
+                p.raiting__text Rating:
+                div.rateit(data-rateit-value='4.5', data-rateit-resetable='false')
+              ul.tags
+                each el in tags
+                  li.tags__el
+                    a.tags__link(href=el.link)= el.title
+          // end product
+          div.banner
+            a.banner__link(href='#')
+              img.banner__img(src=require('./../../media/banner.png'))
+        div.content__wrap
+          div.content__left
+            div.game-info
+              div.game-info__view
+                img(src=require('./../../media/game-play.png'))
+              div.game-info__title
+                h3 Game description
+              div.game-info__description
+                p Play one of the most popular and challenging Zelda games of all time! Repeat the three-day cycle over and over again in The Legend of Zelda: Majora's Mask! This action-adventure video game was released back in 2000 and is the sixth main installment of the Legend of Zelda main series. The Legend of Zelda: Majora's Mask is very popular as it features a darker theme with a more grim story, graphics, events, and plot. The game is set in a place called Termina, which is an alternate version of the Hyrule.
+              div.game-info__controls
+                div.control
+                  kdb.control__sign ←
+                  kdb.control__sign →
+                  kdb.control__sign ↑
+                  kdb.control__sign ↓
+                  span.control__name Directions
+                div.control
+                  kdb.control__sign.is-big enter ↵
+                  span.control__name Start
+                div.control
+                  kdb.control__sign.is-big Space
+                  span.control__name Select/Mode
+                div.control
+                  kdb.control__sign Z
+                  span.control__name A
+                div.control
+                  kdb.control__sign X
+                  span.control__name B
+              // end controls
+              div.game-info__info
+                div.share
+                  span.share__sum 34.145
+                  span.share__text Shares
+                div.social
+                  ul.social__list
+                    li.social__el.is-blue
+                      a.social__link(href='#', target='_blank')
+                        i.icon.is-fb
+                        span Facebook
+                    li.social__el.is-red
+                      a.social__link(href='#', target='_blank')
+                        i.icon.is-tw
+                        span Google +
+                    li.social__el.is-light-blue
+                      a.social__link(href='#', target='_blank')
+                        i.icon.is-gp
+                        span Twitter
+                // end social
+            div.preview-gallery
+              h2 WE ALSO RECOMMEND TO TRY THIS GAMES
+              ul.preview-gallery__list
+                li.preview-gallery__el
+                  a.preview-gallery__link(href='#')
+                    img.preview-gallery__img(src=require('./../../media/game.png') alt='game')
+                    span.play Play
+                li.preview-gallery__el
+                  a.preview-gallery__link(href='#')
+                    img.preview-gallery__img(src=require('./../../media/game.png') alt='game')
+                    span.play Play
+                li.preview-gallery__el
+                  a.preview-gallery__link(href='#')
+                    img.preview-gallery__img(src=require('./../../media/game.png') alt='game')
+                    span.play Play
+                li.preview-gallery__el
+                  a.preview-gallery__link(href='#')
+                    img.preview-gallery__img(src=require('./../../media/game.png') alt='game')
+                    span.play Play
+                li.preview-gallery__el
+                  a.preview-gallery__link(href='#')
+                    img.preview-gallery__img(src=require('./../../media/game.png') alt='game')
+                    span.play Play
+                li.preview-gallery__el
+                  a.preview-gallery__link(href='#')
+                    img.preview-gallery__img(src=require('./../../media/game.png') alt='game')
+                    span.play Play
+                li.preview-gallery__el
+                  a.preview-gallery__link(href='#')
+                    img.preview-gallery__img(src=require('./../../media/game.png') alt='game')
+                    span.play Play
+                li.preview-gallery__el
+                  a.preview-gallery__link(href='#')
+                    img.preview-gallery__img(src=require('./../../media/game.png') alt='game')
+                    span.play Play
+                li.preview-gallery__el
+                  a.preview-gallery__link(href='#')
+                    img.preview-gallery__img(src=require('./../../media/game.png') alt='game')
+                    span.play Play
+                li.preview-gallery__el
+                  a.preview-gallery__link(href='#')
+                    img.preview-gallery__img(src=require('./../../media/game.png') alt='game')
+                    span.play Play
+                li.preview-gallery__el
+                  a.preview-gallery__link(href='#')
+                    img.preview-gallery__img(src=require('./../../media/game.png') alt='game')
+                    span.play Play
+                li.preview-gallery__el
+                  a.preview-gallery__link(href='#')
+                    img.preview-gallery__img(src=require('./../../media/game.png') alt='game')
+                    span.play Play
+                li.preview-gallery__el
+                  a.preview-gallery__link(href='#')
+                    img.preview-gallery__img(src=require('./../../media/game.png') alt='game')
+                    span.play Play
+                li.preview-gallery__el
+                  a.preview-gallery__link(href='#')
+                    img.preview-gallery__img(src=require('./../../media/game.png') alt='game')
+                    span.play Play
+                li.preview-gallery__el
+                  a.preview-gallery__link(href='#')
+                    img.preview-gallery__img(src=require('./../../media/game.png') alt='game')
+                    span.play Play
+            // end preview-gallery
+            div.discussion
+              img(src=require('./../../media/disqus.png'))
+          //end content__left
+          div.content__right
+            aside.aside
+              div.banner
+                a.banner__link(href='#', target='_blank')
+                  img.banner__img(src=require('./../../media/banner_2.png'))
+              ul.games-list
+                each el in gamesList
+                  li.games-list__el
+                    a.games-list__link(href=el.link)= el.title
+          //end content__right
+

@@ -1,0 +1,44 @@
+.pre-footer
+  padding: 20px 0
+  border-top: 1px solid $borderGrey
+  background-color: #fafafa
+
+  &__wrap
+    display: flex
+    flex-direction: row
+
+    +m(320)
+      flex-direction: column
+
+  &__popular
+    margin-right: 10px
+    font-family: $f-opensans-bold
+  &__list
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+
+  &__el
+    position: relative
+    padding-right: 20px
+
+    &:last-child
+      padding-right: 0
+
+      &:after
+        display: none
+
+    &:after
+      position: absolute
+      content: ''
+      right: 9px
+      top: 4px
+      background-color: #333333
+      width: 1px
+      height: 13px
+
+  &__link
+    color: #000
+
+    &:hover
+      color: #808080

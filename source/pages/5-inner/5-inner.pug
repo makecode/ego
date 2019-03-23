@@ -1,0 +1,38 @@
+extends ../base
+block title
+  |EGO
+block main
+  include ../partials/mobile-menu.pug
+  main.main
+    div.top-menu
+      div.container
+        div.breadcrumbs
+          ul.breadcrumbs__list
+            each el in breadcrumbs5
+              li.breadcrumbs__el
+                a.breadcrumbs__link(href=el.link)= el.title
+    // end breadcrumbs
+    section.content.is-5-inner
+      div.container
+        div.information
+          h1 Privacy Policy
+          p This Privacy Policy governs the manner in which Emulator Online collects, uses, maintains and discloses information collected from users (each, a "User") of the <a href="https://emulatorgamesonline.com" target="_blank">https://emulatorgamesonline.com</a> website ("Site").
+          h3 Personal identification information
+          p We may collect personal identification information from Users in a variety of ways, including, but not limited to, when Users visit our site and in connection with other activities, services, features or resources we make available on our Site. Users may be asked for, as appropriate, name, email address. Users may, however, visit our Site anonymously. We will collect personal identification information from Users only if they voluntarily submit such information to us. Users can always refuse to supply personally identification information, except that it may prevent them from engaging in certain Site related activities.
+          span Non-personal identification information
+          p We may collect non-personal identification information about Users whenever they interact with our Site. Non-personal identification information may include the browser name, the type of computer and technical information about Users means of connection to our Site, such as the operating system and the Internet service providers utilized and other similar information.
+          span How we use collected information
+          p Emulator Online may collect and use Users personal information for the following purposes:
+          ul.list.is-circle
+            li.list__el To run and operate our Site
+            li.list__el To improve our Site
+            li.list__el To improve customer service
+            li.list__el To personalize user experience
+            li.list__el Information you provide helps us respond to your customer service requests and support needs more efficiently
+            li.list__el We may need your information display content on the Site correctly
+            li.list__el We may use feedback you provide to improve our products and services
+            li.list__el We may use information in the aggregate to understand how our Users as a group use the services and resources provided on our Site
+          h3 Advertising
+          p Ads appearing on our site may be delivered to Users by advertising partners, who may set cookies. These cookies allow the ad server to recognize your computer each time they send you an online advertisement to compile non personal identification information about you or others who use your computer. This information allows ad networks to, among other things, deliver targeted advertisements that they believe will be of most interest to you. This privacy policy does not cover the use of cookies by any advertisers.
+          p Some of the ads may be served by Google. Google's use of the DART cookie enables it to serve ads to Users based on their visit to our Site and other sites on the Internet. DART uses "non personally identifiable information" and does NOT track personal information about you, such as your name, email address, physical address, etc. You may of the DART cookie by visiting the Google ad and content network privacy policy at <a href="#">http://www.google.com/privacy_ads.html</a>
+

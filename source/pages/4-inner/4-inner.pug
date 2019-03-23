@@ -1,0 +1,64 @@
+extends ../base
+block title
+  |EGO
+block main
+  include ../partials/mobile-menu.pug
+  main.main
+    div.top-menu
+      div.container
+        div.breadcrumbs
+          ul.breadcrumbs__list
+            each el in breadcrumbs4
+              li.breadcrumbs__el
+                a.breadcrumbs__link(href=el.link)= el.title
+      // end breadcrumbs
+    section.content.is-4-inner
+      div.container
+        div.banner
+          a.banner__link(href='#')
+            img.banner__img(src=require('./../../media/banner.png'))
+        div.title-head
+          h2 Games Tags
+          p Here are some of the popular game tags on Emulator Online that you can check out to find the perfect Retro Game just for you! As you browse the games in each category, the game will indicate the console to which it belongs. You can also display games per device using the main menu above or by the game tags below. Tags are listed by <a href="#">series</a>, <a href="#">categories</a> and <a href="#">companies</a>.
+
+        div.categories
+          div.block-head
+            div.block-head__top
+              h3 Consoles
+            div.block-head__bottom
+              p Tags list of games for exclusive consoles.
+          div.categories__wrap
+            ul.game-tags
+              each el in consoles
+                li.game-tags__el
+                  a.game-tag(href=el.href)
+                    span.game-tag__text=el.link
+                    span.game-tag__sum=el.sum
+
+        div.categories
+          div.block-head
+            div.block-head__top
+              h3 Game Series
+            div.block-head__bottom
+              p Tags list for hit title video games that are organized and curated alphabetically by the series name.
+          div.categories__wrap
+            ul.game-tags
+              each el in games
+                li.game-tags__el
+                  a.game-tag(href=el.href)
+                    span.game-tag__text=el.link
+                    span.game-tag__sum=el.sum
+
+        div.categories
+          div.block-head
+            div.block-head__top
+              h3 Game Categories
+            div.block-head__bottom
+              p Tags list that correspond to video game categories which is the theme or genre the game is based on.
+          div.categories__wrap
+            ul.game-tags
+              each el in consoles2
+                li.game-tags__el
+                  a.game-tag(href=el.href)
+                    span.game-tag__text=el.link
+                    span.game-tag__sum=el.sum
