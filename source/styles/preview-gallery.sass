@@ -4,10 +4,7 @@
 
   &__list
     margin-top: 12px
-    display: flex
-    flex-direction: row
-    flex-wrap: wrap
-    justify-content: flex-start
+    font-size: 0
 
   &__el
     display: inline-block
@@ -23,11 +20,11 @@
       margin-bottom: 2%
       width: 32%
 
+      &:nth-child(5n)
+        margin-right: 2%
+
       &:nth-child(3n)
         margin-right: 0
-
-      &:nth-child(5n)
-        margin-right: auto
 
     +m(768)
       width: 49%

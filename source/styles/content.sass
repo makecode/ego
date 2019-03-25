@@ -26,7 +26,9 @@
       display: none
 
   // MAIN
-  &.is-main
+  &.is-main,
+  &.is-2-inner
+
     padding-top: 28px
     .games__el
       &:nth-child(5n)
@@ -37,11 +39,11 @@
         margin-bottom: 2%
         width: 32%
 
+        &:nth-child(5n)
+          margin-right: 2%
+
         &:nth-child(3n)
           margin-right: 0
-
-        &:nth-child(5n)
-          margin-right: auto
 
       +m(768)
         width: 49%
@@ -78,11 +80,11 @@
         margin-bottom: 2%
         width: 32%
 
+        &:nth-child(4n)
+          margin-right: 2%
+
         &:nth-child(3n)
           margin-right: 0
-
-        &:nth-child(4n)
-          margin-right: auto
 
         +m(768)
           width: 49%
