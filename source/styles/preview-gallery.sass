@@ -10,7 +10,7 @@
     display: inline-block
     margin-right: 16px
     margin-bottom: 16px
-    //width: 114px
+    width: 114px
 
     &:nth-child(5n)
       margin-right: 0
@@ -36,12 +36,11 @@
       &:nth-child(3n)
         margin-right: initial
 
-
   &__link
     position: relative
     display: inline-block
     transition: $transition
-    width: 114px
+    max-width: 100%
 
     +m(1024)
       width: 100%
